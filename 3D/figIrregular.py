@@ -31,8 +31,12 @@ def dibujarIrregular():
     #punto de vista
 	gluLookAt(0.5,0.2,0.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
 	glScalef (0.5, 0.5, 0.5)
-	glutSolidIcosahedron()
-	glFlush()
+	
+
+	glBegin(GL_TRIANGLES)
+	
+	glEnd()
+	
 
 def keyPressed(*args):
 	key = args[0]

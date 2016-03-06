@@ -30,8 +30,8 @@ def dibujarEsfera():
 
 # -----Transformaciones de vista, aca vamos a empezar a darle un poco de estilo a nuestra escena----
 	gluLookAt(0.3, 0.3, 0.3, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)# punto de vista de la figura, los parametros son --> gluLookAt( GLdouble eyex, GLdouble eyey, GLdouble eyez,GLdouble centerx, GLdouble centery, GLdouble centerz,GLdouble upx, GLdouble upy, GLdouble upz )
-	glScalef(1.0, 2.0, 1.0)# Define el aspecto de la figura, los parametros son -->(anchoIzquierda, Alto, AnchoDerecha)
-	glutSolidSphere(0.45, 16, 16) # Genera una esfera solida, los parametros son --> (double radius, int slices, int stacks)
+	glScalef(1.0, 1.0, 1.0)# Define el aspecto de la figura, los parametros son -->(anchoIzquierda, Alto, AnchoDerecha)
+	glutWireSphere(0.45, 16, 16) # Genera una esfera solida, los parametros son --> (double radius, int slices, int stacks)
 	glFlush()
 
 def keyPressed(*args):
