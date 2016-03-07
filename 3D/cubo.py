@@ -47,7 +47,6 @@ def keyPressed(*args):
     glColor3f(0.5, 0.0, 0.0)
   elif key == "g" or key == "G":
     glColor3f(0.0, 0.5, 0.0)
-    glRotatef(30,0,0,1)
   elif key == "b" or key == "B":
     glColor3f(0.0, 0.0, 0.5)
 

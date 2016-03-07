@@ -31,12 +31,21 @@ def dibujarIrregular():
     #punto de vista
 	gluLookAt(0.5,0.2,0.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
 	glScalef (0.5, 0.5, 0.5)
-	
 
-	glBegin(GL_TRIANGLES)
-	
+	glBegin(GL_QUADS)
+	glColor3f(0.0, 0.0, 0.5)
+	glVertex3f( 0.0,  1.0, 0.0)
+
+	glColor3f(0.5, 0.0, 0.0)
+	glVertex3f(-1.0, -1.0, 0.0)
+
+	glColor3f(0.0, 0.5, 0.0)
+	glVertex3f( 1.0, -1.0, 0.0)
+
+	glColor3f(0.5, 0.5, 0.0)
+	glVertex3f( 1.0, 1.0, 1.0)
+
 	glEnd()
-	
 
 def keyPressed(*args):
 	key = args[0]
